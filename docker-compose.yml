@@ -16,7 +16,7 @@ services:
         volumes:
             - ./var:/data
         environment:
-           - CF_TELEGRAM_TOKEN=194759983:AAHetu-e6siiCJrDyLZSQp5g7_pGv18Fak8
+           - CF_TELEGRAM_TOKEN=YOUR_TOKEN
 
     redis:
         image: redis
