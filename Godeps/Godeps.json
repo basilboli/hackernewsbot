@@ -1,0 +1,20 @@
+{
+	"ImportPath": "github.com/basilboli/hackernewsbot",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "github.com/mediocregopher/radix.v2/pool",
+			"Rev": "74e50e64194d2d2f4836212451c28b127f9d7fa1"
+		},
+		{
+			"ImportPath": "github.com/mediocregopher/radix.v2/redis",
+			"Rev": "74e50e64194d2d2f4836212451c28b127f9d7fa1"
+		},
+		{
+			"ImportPath": "github.com/tucnak/telebot",
+			"Comment": "v1.0-44-g68ad7fd",
+			"Rev": "68ad7fd5dcdbfdc4f6513e0195ad6edb2c3e0573"
+		}
+	]
+}

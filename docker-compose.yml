@@ -1,0 +1,31 @@
+version: '2'
+services:
+
+    hackernewsbot:
+        build: .
+        image: basilboli/hackernewsbot:latest
+        container_name: hackernewsbot
+
+        logging:
+          driver: json-file
+          options:
+              max-size: "10m"
+              max-file: "5"
+
+        restart: always
+        volumes:
+            - ./var:/data
+        environment:
+           - CF_TELEGRAM_TOKEN=194759983:AAHetu-e6siiCJrDyLZSQp5g7_pGv18Fak8
+
+    redis:
+        image: redis
+        container_name: redis
+
+        logging:
+          driver: json-file
+          options:
+              max-size: "10m"
+              max-file: "5"
+        ports:
+            - "6379:6379"
